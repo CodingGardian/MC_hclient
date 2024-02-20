@@ -1,0 +1,6 @@
+﻿  DLLMain.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 2 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  TestDLL.vcxproj -> C:\Projects\MC_hclient\MC_hclient\x64\Release\TestDLL.dll
