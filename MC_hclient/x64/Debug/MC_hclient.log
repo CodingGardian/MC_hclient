@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Projects\MC_hclient\MC_hclient\main.cpp(60,37): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+  MC_hclient.vcxproj -> C:\Projects\MC_hclient\MC_hclient\x64\Debug\MC_hclient.exe
