@@ -130,17 +130,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DebugTool.cpp" />
+    <ClCompile Include="ConfigFile.cpp" />
+    <ClCompile Include="ConfigParser.cpp" />
+    <ClCompile Include="ConfigParser.h" />
+    <ClCompile Include="SafePtr.h" />
+    <ClCompile Include="Utilities\DebugTool.cpp" />
     <ClCompile Include="Injection\DLLInjector.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Utilities\ProcessObject.cpp" />
     <ClCompile Include="Utilities\StringUtil.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ConfigFile.h" />
     <ClInclude Include="Utilities\DebugTool.h" />
     <ClInclude Include="Injection\DLLInjector.h" />
     <ClInclude Include="Utilities\ProcessObject.h" />
     <ClInclude Include="Utilities\StringUtil.h" />
+    <ClInclude Include="variant.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

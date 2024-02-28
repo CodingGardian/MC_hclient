@@ -1,4 +1,4 @@
-#include "Utilities/DebugTool.h"
+#include "DebugTool.h"
 #include <iostream>
 #include <stdarg.h>
 #include <stdio.h>
@@ -25,10 +25,6 @@ void DebugTools::PrintConsole(const wchar_t* format, ...) {
 	va_list vl;
 	va_start(vl, temp.c_str());
 	vfwprintf(stdout, temp.c_str(), vl);
-}
-
-void DebugTools::SetObjID(std::wstring objID) {
-	m_objID = objID;
 }
 
 void DebugTools::PrintWindow(std::wstring message) {
