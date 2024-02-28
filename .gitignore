@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/JNI_libout/JNI_libout.vcxproj
+/JNI_libout/JNI_libout.vcxproj.filters
