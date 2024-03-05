@@ -121,4 +121,5 @@ HANDLE Process::GetProcessHandle() {
 
 BOOL Process::CloseProcess() {
 	// wait how do I do this???
+	return TRUE;
 }

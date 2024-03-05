@@ -1,4 +1,5 @@
-#pragma once
+#ifndef DLLINJECTOR_H
+#define DLLINJECTOR_H
 #include <windows.h>
 #include <string>
 #include <vector>
@@ -59,3 +60,5 @@ public:
 
 	bool IsBadInstance() { return m_bBadInstance; }
 };
+
+#endif

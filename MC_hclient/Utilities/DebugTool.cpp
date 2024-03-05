@@ -6,10 +6,10 @@
 #include <string>
 
 void DebugTools::PrintConsole(const char* format, ...) {
-	wprintf(L"Scope:%s Object ID:%s Message: ", m_scope.c_str(), m_objID.c_str());
+	wprintf(L"@@Scope: %ls    Object ID: %ls    Message: ", m_scope.c_str(), m_objID.c_str());
 
 	std::string temp(format);
-	temp.append("\n");
+	temp.append("\n\n");
 
 	va_list vl;
 	va_start(vl, temp.c_str());
@@ -17,10 +17,10 @@ void DebugTools::PrintConsole(const char* format, ...) {
 }
 
 void DebugTools::PrintConsole(const wchar_t* format, ...) {
-	wprintf(L"Scope:%s Object ID:%s Message: ", m_scope.c_str(), m_objID.c_str());
+	wprintf(L"@@Scope:%s    Object ID:%s    Message: ", m_scope.c_str(), m_objID.c_str());
 	
 	std::wstring temp(format);
-	temp.append(L"\n");
+	temp.append(L"\n\n");
 
 	va_list vl;
 	va_start(vl, temp.c_str());

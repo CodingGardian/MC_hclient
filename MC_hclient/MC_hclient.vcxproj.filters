@@ -30,9 +30,6 @@
     <ClCompile Include="Utilities\StringUtil.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ConfigParser.h">
-      <Filter>Header Files</Filter>
-    </ClCompile>
     <ClCompile Include="ConfigParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -60,6 +57,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="variant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigParser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

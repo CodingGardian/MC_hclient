@@ -1,4 +1,5 @@
-#pragma once
+#ifndef PROCESSOBJECT_H
+#define PROCESSOBJECT_H
 #include <string>
 #include <windows.h>
 
@@ -57,3 +58,5 @@ public:
 
 	BOOL IsBadInstance() { return m_bIsBadInstance; }
 };
+
+#endif
