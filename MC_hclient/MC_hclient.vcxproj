@@ -122,6 +122,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>C:\Projects\MC_hclient\MC_hclient;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,10 +132,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ConfigFile.cpp" />
-    <ClCompile Include="ConfigParser.cpp" />
-    <ClInclude Include="ConfigParser.h" />
-    <ClCompile Include="SafePtr.h" />
+    <ClCompile Include="Parsing\ConfigFile.cpp" />
+    <ClCompile Include="Parsing\ConfigParser.cpp" />
+    <ClInclude Include="Parsing\ConfigParser.h" />
+    <ClCompile Include="Utilities\SafePtr.h" />
     <ClCompile Include="Utilities\DebugTool.cpp" />
     <ClCompile Include="Injection\DLLInjector.cpp" />
     <ClCompile Include="main.cpp" />
@@ -142,12 +143,12 @@
     <ClCompile Include="Utilities\StringUtil.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ConfigFile.h" />
+    <ClInclude Include="Parsing\ConfigFile.h" />
     <ClInclude Include="Utilities\DebugTool.h" />
     <ClInclude Include="Injection\DLLInjector.h" />
     <ClInclude Include="Utilities\ProcessObject.h" />
     <ClInclude Include="Utilities\StringUtil.h" />
-    <ClInclude Include="variant.h" />
+    <ClInclude Include="Utilities\variant.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

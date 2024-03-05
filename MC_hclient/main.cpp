@@ -6,7 +6,7 @@
 
 #include "Injection/DLLInjector.h"
 #include "Utilities/ProcessObject.h"
-#include "ConfigFile.h"
+#include "Parsing/ConfigFile.h"
 
 #define MAX_NAME 100
 

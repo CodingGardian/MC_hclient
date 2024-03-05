@@ -30,13 +30,13 @@
     <ClCompile Include="Utilities\StringUtil.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ConfigParser.cpp">
+    <ClCompile Include="Parsing\ConfigParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SafePtr.h">
+    <ClCompile Include="Utilities\SafePtr.h">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="ConfigFile.cpp">
+    <ClCompile Include="Parsing\ConfigFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -53,13 +53,13 @@
     <ClInclude Include="Utilities\StringUtil.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ConfigFile.h">
+    <ClInclude Include="Parsing\ConfigFile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="variant.h">
+    <ClInclude Include="Utilities\variant.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ConfigParser.h">
+    <ClInclude Include="Parsing\ConfigParser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
