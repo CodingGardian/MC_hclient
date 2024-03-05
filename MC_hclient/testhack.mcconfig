@@ -1,0 +1,6 @@
+#"testhack" "game" "TestDLL.dll" {
+!"thisisavariable" "INT" "100"
+!"thisisiavariabletoo!" "FLOAT" "2.112312"
+!"WHATTTTTT" "POINTER" "0x544634"
+!"error" "2jdgs" "0"
+}
