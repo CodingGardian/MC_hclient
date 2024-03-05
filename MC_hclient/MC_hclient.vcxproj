@@ -134,6 +134,7 @@
   <ItemGroup>
     <ClCompile Include="Parsing\ConfigFile.cpp" />
     <ClCompile Include="Parsing\ConfigParser.cpp" />
+    <ClInclude Include="HackInterface.h" />
     <ClInclude Include="Parsing\ConfigParser.h" />
     <ClCompile Include="Utilities\SafePtr.h" />
     <ClCompile Include="Utilities\DebugTool.cpp" />

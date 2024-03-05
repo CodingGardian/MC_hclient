@@ -24,6 +24,8 @@ DWORD InjectorFunc(LPVOID* args) {
 	return lib == NULL;
 }
 
+std::vector<DLLInjector*> DLLInjector::Injector_Table;
+
 DLLInjector::DLLInjector(HANDLE process, std::wstring DLLPath, InjectorType t, std::wstring id) {
 	if (t == REMOTETHREAD) {
 		/*HMODULE locallib = LoadLibraryA(DLLPath_winstr);
@@ -120,6 +122,7 @@ DLLInjector::DLLInjector(HANDLE process, std::wstring DLLPath, InjectorType t, s
 		
 
 		free(pthreadattributes);
+		Injector_Table.push_back(this);
 		m_bBadInstance = false;
 		return;
 	}
@@ -128,6 +131,9 @@ DLLInjector::DLLInjector(HANDLE process, std::wstring DLLPath, InjectorType t, s
 	}
 	m_bBadInstance = true;
 }
+
+
+
 
 DLLInjector::~DLLInjector() {
 	//CloseHandle(m_hRemoteThread);

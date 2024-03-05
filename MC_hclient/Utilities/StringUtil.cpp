@@ -10,6 +10,23 @@ std::string& CEString::TruncateFileFromPath() {
 	return *this;
 }
 
+bool CEWString::IsFilePath() {
+    if (std::wstring::find(L'\\') == std::wstring::npos) {
+        return false;
+    }
+    
+    return true;
+}
+
+bool CEString::IsFilePath() {
+    if (std::string::find('\\') == std::string::npos) {
+        return false;
+    }
+
+    return true;
+}
+
+
 std::string CEWString::GetString() {
     std::size_t size = sizeof(GetWString().c_str());
     char* str = new char[size];
@@ -114,4 +131,20 @@ std::string GetStringFromWString(const std::wstring& wstr) {
     delete[] str;
 
     return temp;
+}
+
+bool IsFilePath(const std::wstring& str) {
+    if (str.find(L'\\') == std::wstring::npos) {
+        return false;
+    }
+
+    return true;
+}
+
+bool IsFilePath(const std::string& str) {
+    if (str.find('\\') == std::string::npos) {
+        return false;
+    }
+
+    return true;
 }

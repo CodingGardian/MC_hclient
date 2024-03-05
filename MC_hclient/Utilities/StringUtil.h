@@ -22,6 +22,8 @@ public:
 
 	std::string GetString();
 
+	bool IsFilePath();
+
 	inline float GetFloat() { 
 		size_t i = 0; float returnVal = std::stof(this->GetWString(), &i); 
 		if (i != std::wstring::length()) { /*m_dbgTool.PrintConsole(L"GetFloat function parsed unexpected number of characters for string: %ls as float: %f", std::wstring::c_str(), returnVal);*/ }
@@ -90,6 +92,8 @@ public:
 
 	std::wstring GetWString();
 
+	bool IsFilePath();
+
 	inline float GetFloat() {
 		size_t i = 0; float returnVal = std::stof(this->GetString(), &i);
 		if (i != std::string::length()) { /*m_dbgTool.PrintConsole(L"GetFloat function parsed unexpected number of characters for string: %ls as float: %f", std::string::c_str(), returnVal);*/ }
@@ -140,5 +144,8 @@ public:
 extern std::string GetStringFromWString(const std::wstring& str);
 
 extern std::wstring GetWStringFromString(const std::string& str);
+
+extern bool IsFilePath(const std::wstring& str);
+extern bool IsFilePath(const std::string& str);
 
 #endif

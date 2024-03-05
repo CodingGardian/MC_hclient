@@ -3,14 +3,15 @@
 #include <windows.h>
 #include <string>
 #include <vector>
+#include "HackInterface.h"
 
+// TODO: MAKE SURE THIS_INTSANCE IS INITIALIZED ON PROGRAM STARTUP
 class DLLInjector {
 public:
 	enum InjectorType;
 private:
 	static std::vector<DLLInjector*> Injector_Table;
 	
-	// DLLPath is local to the running process
 	std::wstring m_ID;
 	std::wstring m_DLLPath;
 	HANDLE m_process;
@@ -23,8 +24,7 @@ private:
 
 	static HANDLE THIS_INSTANCE;
 
-	HANDLE m_hRemoteThread;
-	LPDWORD m_RemoteThreadID;
+	HackInterface* m_hackInterface;
 
 public:
 	enum InjectorType { REMOTETHREAD, WINDOWSHOOK };
@@ -51,7 +51,9 @@ private:
 	static DLLInjectorTable m_InjectorObjectTable;
 public:
 
-	const DLLInjectorTable& GetInjectorTableInstance() const;
+	const DLLInjectorTable& GetInjectorTableInstance() const { return m_InjectorObjectTable; }
+
+	const HackInterface& GetHackInterface() const { return *m_hackInterface; }
 
 	//int LoadDLL();
 

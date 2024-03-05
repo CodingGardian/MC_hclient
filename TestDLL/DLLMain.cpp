@@ -3,6 +3,7 @@
 
 // yeah yeah I know globals bad >:(
 bool bexitthread;
+#include "framework.h"
 
 #define DLLEXPORT __declspec(dllexport)
 
@@ -17,6 +18,12 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved) {
     LPDWORD threadid = 0;
 
     HANDLE hthread = 0;
+
+
+
+    TestLib::TestFunction(2, 2);
+
+
 
     switch (fdwReason)
     {
